@@ -3,7 +3,7 @@ require "singleton"
 module Webshot
   class Screenshot
     include Capybara::DSL
-    include Singleton
+    #include Singleton
 
     def initialize(opts = {})
       Webshot.capybara_setup!
